@@ -20,6 +20,16 @@ The semester project involved a full risk assessment of Health Network across th
 | Case Study Analysis | Breach post-mortem and compliance critique (Everbridge) |
 | Awareness Campaign Evaluation | Critique of real cybersecurity awareness material |
 
+## Project Structure
+
+The work was completed across three parts over the semester.
+
+**Part 1** covered the initial asset inventory, process map, and threat identification using Microsoft Threat Modeling Tool and OWASP Threat Dragon.
+
+**Part 2** expanded the threat model using AWS Threat Composer with full STRIDE classification, data flow diagrams, and mitigation mapping across 10 identified threats.
+
+**Part 3** finalized the security control catalog, control interaction diagram, and gap analysis mapping controls to preventive, detective, and corrective phases.
+
 ## Tools & Frameworks
 
 ![OWASP Threat Dragon](https://img.shields.io/badge/OWASP-Threat_Dragon-purple?logo=owasp&logoColor=white)
