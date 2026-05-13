@@ -22,10 +22,12 @@ The semester project involved a full risk assessment of Health Network across th
 
 ## Tools & Frameworks
 
-![STRIDE](https://img.shields.io/badge/STRIDE-Threat_Modeling-grey)
-![NIST](https://img.shields.io/badge/NIST-CSF-0033A0)
+![OWASP Threat Dragon](https://img.shields.io/badge/OWASP-Threat_Dragon-purple?logo=owasp&logoColor=white)
+![Microsoft TMT](https://img.shields.io/badge/Microsoft-Threat_Modeling_Tool-0078D4?logo=microsoft&logoColor=white)
 ![AWS Threat Composer](https://img.shields.io/badge/AWS-Threat_Composer-FF9900?logo=amazonaws&logoColor=white)
-![Visio](https://img.shields.io/badge/Microsoft-Visio-3955A3?logo=microsoftvisio&logoColor=white)
+![Lucidchart](https://img.shields.io/badge/Lucidchart-Diagrams-F97A1F)
+![NIST](https://img.shields.io/badge/NIST-CSF-0033A0)
+![STRIDE](https://img.shields.io/badge/STRIDE-Threat_Modeling-grey)
 
 ## Notes
 
