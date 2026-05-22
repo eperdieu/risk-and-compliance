@@ -6,6 +6,18 @@ This repo holds work I completed during CIT-45100: Risk Assessment and Complianc
 
 The semester project involved a full risk assessment of Health Network across three parts. I built out the threat model, asset inventory, data flow diagrams, and security control catalog for a healthcare network handling patient data, payment processing, and medical messaging.
 
+## Project Structure
+
+The work was completed across three parts over the semester.
+
+**Part 1** covered the initial asset inventory, process map, and threat identification. I compared Microsoft Threat Modeling Tool and AWS Threat Composer side by side, evaluating each tool's advantages and limitations for modeling Health Network's architecture.
+
+
+**Part 2** expanded the threat model using AWS Threat Composer with full STRIDE classification, data flow diagrams built in Lucidchart, and mitigation mapping across 10 identified threats covering SQL injection, DDoS, ransomware, physical theft, and insider threats.
+
+
+**Part 3** finalized the security control catalog with six controls across preventive, detective, and corrective phases, a control interaction diagram, gap analysis identifying residual risks, and a MITRE ATT&CK mapping for a LockBit ransomware scenario against Health Network.
+
 ## What's Covered
 
 | Deliverable | Description |
@@ -22,16 +34,6 @@ The semester project involved a full risk assessment of Health Network across th
 | Framework Comparison | NIST, ISO, and supply chain security model analysis |
 | Case Study Analysis | Breach post-mortem and compliance critique (Everbridge) |
 | Awareness Campaign Evaluation | Critique of real cybersecurity awareness material |
-
-## Project Structure
-
-The work was completed across three parts over the semester.
-
-**Part 1** covered the initial asset inventory, process map, and threat identification using Microsoft Threat Modeling Tool and OWASP Threat Dragon.
-
-**Part 2** expanded the threat model using AWS Threat Composer with full STRIDE classification, data flow diagrams, and mitigation mapping across 10 identified threats.
-
-**Part 3** finalized the security control catalog, control interaction diagram, gap analysis, and MITRE ATT&CK mapping for a LockBit ransomware scenario against Health Network.
 
 ## Tools & Frameworks
 
