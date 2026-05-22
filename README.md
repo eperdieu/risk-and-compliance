@@ -11,11 +11,14 @@ The semester project involved a full risk assessment of Health Network across th
 | Deliverable | Description |
 |-------------|-------------|
 | Asset Inventory | Classified assets across Health Network's production environment |
+| Asset Classification Diagram | Data flow and trust boundary diagram built in Microsoft Threat Modeling Tool |
 | Data Flow Diagrams | Interaction diagrams showing data movement across HNetPay, HNetExchange, and HNetConnect |
 | Threat Model | 10 STRIDE-classified threats modeled in AWS Threat Composer with mitigations mapped |
 | Process Map | HNetConnect patient search flow with SQL injection and information disclosure risks identified |
-| Security Control Catalog | Preventive, detective, and corrective controls with gap analysis |
+| Security Control Catalog | Preventive, detective, and corrective controls with implementation steps, risk mitigation, and testing criteria |
 | Control Interaction Diagram | Visual showing how controls layer across attack phases |
+| MITRE ATT&CK Mapping | LockBit ransomware techniques mapped to Health Network using ATT&CK Navigator |
+| MITRE ATT&CK Technique Breakdown | Detailed analysis of each technique including targeted assets, detections, and controls |
 | Framework Comparison | NIST, ISO, and supply chain security model analysis |
 | Case Study Analysis | Breach post-mortem and compliance critique (Everbridge) |
 | Awareness Campaign Evaluation | Critique of real cybersecurity awareness material |
