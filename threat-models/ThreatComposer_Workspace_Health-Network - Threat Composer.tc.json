@@ -1,0 +1,461 @@
+{
+  "schema": 1,
+  "applicationInfo": {
+    "description": ""
+  },
+  "architecture": {
+    "image": "",
+    "description": "HNetPay Portal\n\nHNetExchange Service\n\nHNetConnect Directory\n\nProduction Databases\n\nEmployee Devices\n\nDB Access Layer\n\nProduction Servers\n\nBackup Storage\n\nAudit Logs\n\nThird-Party Vendors"
+  },
+  "dataflow": {
+    "description": ""
+  },
+  "assumptions": [
+    {
+      "id": "f5deebd3-3d08-4580-8232-ce0b3f86e210",
+      "numericId": 5,
+      "content": "Productions systems are replicated across three centers for high availability. ",
+      "displayOrder": 5
+    },
+    {
+      "id": "e28a7511-128e-4b07-b829-f4f27a32dbee",
+      "numericId": 4,
+      "content": "DB Access Layer is the single point of entry for all database queries from applications.",
+      "displayOrder": 4
+    },
+    {
+      "id": "474021d4-7ce0-4800-b7e8-19d31d28856c",
+      "numericId": 3,
+      "content": "Employees travel with company-issued laptops and mobile devices containing sensitive data.",
+      "displayOrder": 3
+    },
+    {
+      "id": "1f88d6ad-722b-4523-958a-dab08821e13e",
+      "numericId": 2,
+      "content": "All external connections to the HNet services use HTTPS encryption.",
+      "displayOrder": 2
+    },
+    {
+      "id": "a6dbe4ac-e51f-44dd-8fb3-27424ffc3b9e",
+      "numericId": 1,
+      "content": "Third-party Data center vendors have physical access to production servers.",
+      "displayOrder": 1
+    }
+  ],
+  "mitigations": [
+    {
+      "id": "71210709-8c86-43ad-bf83-1d12470002c7",
+      "numericId": 8,
+      "status": "mitigationResolved",
+      "content": "MFA will be required for all system access.",
+      "displayOrder": 8
+    },
+    {
+      "id": "3e31ce3f-3a04-4e76-9787-4e89b814650e",
+      "numericId": 7,
+      "status": "mitigationIdentified",
+      "content": "Least Privilege Access will be applied to grant users with the minimum required permissions. ",
+      "displayOrder": 7
+    },
+    {
+      "id": "27bceeb6-0b29-47b8-8989-f6faa1c7e080",
+      "numericId": 6,
+      "status": "mitigationIdentified",
+      "content": "Comprehensive audit logging will be used on all database access, user activity and system logs.",
+      "displayOrder": 6
+    },
+    {
+      "id": "3dfa366a-524a-440d-bb9d-dbd0c376bdb8",
+      "numericId": 5,
+      "status": "mitigationResolved",
+      "content": "Web Application Firewall will be implemented on all the HNet applications. ",
+      "displayOrder": 5
+    },
+    {
+      "id": "2fbe3b8d-703d-4d49-b306-85acc307d664",
+      "numericId": 4,
+      "status": "mitigationIdentified",
+      "content": "Centralized database access prevents SQL injection through queries. ",
+      "displayOrder": 4
+    },
+    {
+      "id": "c536df37-720a-4c67-b8ba-6edc4f5ea12f",
+      "numericId": 3,
+      "status": "mitigationResolved",
+      "content": "Production systems are replicated across the three different data centers.",
+      "displayOrder": 3
+    },
+    {
+      "id": "db2fc72e-df40-4107-85b1-e19095961ee4",
+      "numericId": 2,
+      "status": "mitigationResolved",
+      "content": "Encryption will be on all corporate devices.",
+      "displayOrder": 2
+    },
+    {
+      "id": "36f61c12-d371-4bf7-a402-43a9006dc0c1",
+      "numericId": 1,
+      "status": "mitigationInProgress",
+      "content": "Badge readers and biometric scanners will be located at all data centers.",
+      "displayOrder": 1
+    }
+  ],
+  "assumptionLinks": [
+    {
+      "type": "Mitigation",
+      "linkedId": "36f61c12-d371-4bf7-a402-43a9006dc0c1",
+      "assumptionId": "f5deebd3-3d08-4580-8232-ce0b3f86e210"
+    }
+  ],
+  "mitigationLinks": [
+    {
+      "linkedId": "ec4e3dfc-cb05-46b4-b091-dd93780decff",
+      "mitigationId": "36f61c12-d371-4bf7-a402-43a9006dc0c1"
+    },
+    {
+      "linkedId": "ec4e3dfc-cb05-46b4-b091-dd93780decff",
+      "mitigationId": "db2fc72e-df40-4107-85b1-e19095961ee4"
+    },
+    {
+      "linkedId": "755b99fd-b3d7-4828-868c-47bd2b781f9f",
+      "mitigationId": "c536df37-720a-4c67-b8ba-6edc4f5ea12f"
+    },
+    {
+      "linkedId": "ae0bde5d-8dd6-4161-85cf-a1b1024fcd8e",
+      "mitigationId": "c536df37-720a-4c67-b8ba-6edc4f5ea12f"
+    },
+    {
+      "linkedId": "f1834a47-1a3a-44c7-a2e0-978f581614dd",
+      "mitigationId": "2fbe3b8d-703d-4d49-b306-85acc307d664"
+    },
+    {
+      "linkedId": "f1834a47-1a3a-44c7-a2e0-978f581614dd",
+      "mitigationId": "3dfa366a-524a-440d-bb9d-dbd0c376bdb8"
+    },
+    {
+      "linkedId": "d83c44fc-c8b3-46ed-8aed-7d743f9b325f",
+      "mitigationId": "3dfa366a-524a-440d-bb9d-dbd0c376bdb8"
+    },
+    {
+      "linkedId": "f9a29581-075b-443e-a5b5-e3d81b79a80a",
+      "mitigationId": "3dfa366a-524a-440d-bb9d-dbd0c376bdb8"
+    },
+    {
+      "linkedId": "3db1f649-17d4-492d-a24d-56167bc071fc",
+      "mitigationId": "27bceeb6-0b29-47b8-8989-f6faa1c7e080"
+    },
+    {
+      "linkedId": "3db1f649-17d4-492d-a24d-56167bc071fc",
+      "mitigationId": "3e31ce3f-3a04-4e76-9787-4e89b814650e"
+    },
+    {
+      "linkedId": "ec4e3dfc-cb05-46b4-b091-dd93780decff",
+      "mitigationId": "71210709-8c86-43ad-bf83-1d12470002c7"
+    },
+    {
+      "linkedId": "3db1f649-17d4-492d-a24d-56167bc071fc",
+      "mitigationId": "71210709-8c86-43ad-bf83-1d12470002c7"
+    }
+  ],
+  "threats": [
+    {
+      "id": "41b3128e-5c0f-4107-98f5-5ddf7a91908d",
+      "numericId": 10,
+      "displayOrder": 10,
+      "status": "threatIdentified",
+      "statement": "An internal actor who uses an unauthorized tool can store data within the tool, which leads to data exposure outside of company control, negatively impacting Production Databases and Employee Devices",
+      "threatSource": "internal actor",
+      "prerequisites": "who uses an unauthorized tool",
+      "threatAction": "store data within the tool",
+      "threatImpact": "data exposure outside of company control",
+      "impactedAssets": [
+        "Production Databases",
+        "Employee Devices"
+      ],
+      "metadata": [
+        {
+          "key": "Priority",
+          "value": "Medium"
+        },
+        {
+          "key": "STRIDE",
+          "value": [
+            "I"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6a6d93e0-8bb2-4d35-be48-6d85f101c7ec",
+      "numericId": 9,
+      "displayOrder": 9,
+      "status": "threatIdentified",
+      "statement": "An external threat actor uses social engineering by impersonating IT support or a vendor can convince employees to revel non-critical information, which leads to information disclosure, negatively impacting Employee Trust",
+      "threatSource": "external threat actor",
+      "prerequisites": "uses social engineering by impersonating IT support or a vendor",
+      "threatAction": "convince employees to revel non-critical information",
+      "threatImpact": "information disclosure",
+      "impactedAssets": [
+        "Employee Trust"
+      ],
+      "metadata": [
+        {
+          "key": "STRIDE",
+          "value": [
+            "S",
+            "I"
+          ]
+        },
+        {
+          "key": "Priority",
+          "value": "Low"
+        }
+      ]
+    },
+    {
+      "id": "f9a29581-075b-443e-a5b5-e3d81b79a80a",
+      "numericId": 8,
+      "displayOrder": 8,
+      "status": "threatIdentified",
+      "statement": "An external threat actor who exploits employees with outdated services and browsers can execute old vulnerabilities, which leads to malware infection on employee devices, negatively impacting Employee Devices",
+      "threatSource": "external threat actor",
+      "prerequisites": "who exploits employees with outdated services and browsers",
+      "threatAction": "execute old vulnerabilities",
+      "threatImpact": "malware infection on employee devices",
+      "impactedAssets": [
+        "Employee Devices"
+      ],
+      "metadata": [
+        {
+          "key": "Priority",
+          "value": "Low"
+        },
+        {
+          "key": "STRIDE",
+          "value": [
+            "T",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d83c44fc-c8b3-46ed-8aed-7d743f9b325f",
+      "numericId": 7,
+      "displayOrder": 7,
+      "status": "threatIdentified",
+      "statement": "An external threat actor who discovers an un-patched vulnerability in the web servers can exploit that vulnerability to gain code execution, which leads to complete server compromise allowing data theft and lateral movement, negatively impacting HNetExchange, HNetPay, HNetConnect, Production Servers and Production Databases",
+      "threatSource": "external threat actor",
+      "prerequisites": "who discovers an un-patched vulnerability in the web servers",
+      "threatAction": "exploit that vulnerability to gain code execution",
+      "threatImpact": "complete server compromise allowing data theft and lateral movement",
+      "impactedAssets": [
+        "HNetExchange",
+        "HNetPay",
+        "HNetConnect",
+        "Production Servers",
+        "Production Databases"
+      ],
+      "metadata": [
+        {
+          "key": "Priority",
+          "value": "High"
+        },
+        {
+          "key": "STRIDE",
+          "value": [
+            "T",
+            "E",
+            "I"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ae0bde5d-8dd6-4161-85cf-a1b1024fcd8e",
+      "numericId": 6,
+      "displayOrder": 6,
+      "status": "threatIdentified",
+      "statement": "An external threat actor that uses a DDoS service can flood our HNet Services, which leads to service down-time and stop medical message routing, negatively impacting HNetExchange, Production Servers and Patient Care",
+      "threatSource": "external threat actor",
+      "prerequisites": "that uses a DDoS service",
+      "threatAction": "flood our HNet Services",
+      "threatImpact": "service down-time and stop medical message routing",
+      "impactedAssets": [
+        "HNetExchange",
+        "Production Servers",
+        "Patient Care"
+      ],
+      "metadata": [
+        {
+          "key": "Priority",
+          "value": "High"
+        },
+        {
+          "key": "STRIDE",
+          "value": [
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "759405e2-2202-47aa-9f1b-68a1ae68b7cf",
+      "numericId": 5,
+      "displayOrder": 5,
+      "status": "threatIdentified",
+      "statement": "An external threat actor compromises the third-party vendor system can leverage privileged access to inject malware, which leads to compromise of the network and data, negatively impacting Production Servers, Third-Party Vendor, HNetExchange, HNetPay, HNetConnect and Customer Data",
+      "threatSource": "external threat actor",
+      "prerequisites": "compromises the third-party vendor system",
+      "threatAction": "leverage privileged access to inject malware",
+      "threatImpact": "compromise of the network and data",
+      "impactedAssets": [
+        "Production Servers",
+        "Third-Party Vendor",
+        "HNetExchange",
+        "HNetPay",
+        "HNetConnect",
+        "Customer Data"
+      ],
+      "metadata": [
+        {
+          "key": "Priority",
+          "value": "Medium"
+        },
+        {
+          "key": "STRIDE",
+          "value": [
+            "T",
+            "E",
+            "I"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f1834a47-1a3a-44c7-a2e0-978f581614dd",
+      "numericId": 4,
+      "displayOrder": 4,
+      "status": "threatIdentified",
+      "statement": "An external threat actor with knowledge of SQL injection techniques can exploit web applications, which leads to unauthorized database access, negatively impacting Production Databases, HNetPay, HNetConnect, HNetExchange and Customer Data",
+      "threatSource": "external threat actor",
+      "prerequisites": "with knowledge of SQL injection techniques",
+      "threatAction": "exploit web applications",
+      "threatImpact": "unauthorized database access",
+      "impactedAssets": [
+        "Production Databases",
+        "HNetPay",
+        "HNetConnect",
+        "HNetExchange",
+        "Customer Data"
+      ],
+      "metadata": [
+        {
+          "key": "Priority",
+          "value": "High"
+        },
+        {
+          "key": "STRIDE",
+          "value": [
+            "T",
+            "I",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "755b99fd-b3d7-4828-868c-47bd2b781f9f",
+      "numericId": 3,
+      "displayOrder": 3,
+      "status": "threatIdentified",
+      "statement": "A Natural Disaster that affects a data center with databases can destroy and disable production infrastructure, which leads to complete service outage, negatively impacting Production Servers, HNetExchange, HNetPay, HNetConnect, Patient Care and Production Databases",
+      "threatSource": "Natural Disaster",
+      "prerequisites": "that affects a data center with databases",
+      "threatAction": "destroy and disable production infrastructure",
+      "threatImpact": "complete service outage",
+      "impactedAssets": [
+        "Production Servers",
+        "HNetExchange",
+        "HNetPay",
+        "HNetConnect",
+        "Patient Care",
+        "Production Databases"
+      ],
+      "metadata": [
+        {
+          "key": "Priority",
+          "value": "High"
+        },
+        {
+          "key": "STRIDE",
+          "value": [
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ec4e3dfc-cb05-46b4-b091-dd93780decff",
+      "numericId": 2,
+      "displayOrder": 2,
+      "status": "threatIdentified",
+      "statement": "An external threat actor who finds or steals an unencrypted company device can access cached credentials and company data, which leads to unauthorized access to production systems, negatively impacting Employee Devices, Production Databases and Customer Data",
+      "threatSource": "external threat actor",
+      "prerequisites": "who finds or steals an unencrypted company device",
+      "threatAction": "access cached credentials and company data",
+      "threatImpact": "unauthorized access to production systems",
+      "impactedAssets": [
+        "Employee Devices",
+        "Production Databases",
+        "Customer Data"
+      ],
+      "metadata": [
+        {
+          "key": "Priority",
+          "value": "High"
+        },
+        {
+          "key": "STRIDE",
+          "value": [
+            "I",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3db1f649-17d4-492d-a24d-56167bc071fc",
+      "numericId": 1,
+      "displayOrder": 1,
+      "status": "threatResolved",
+      "statement": "An internal actor with physical access to data can remove production servers, which leads to the theft of sensitive payment and patient data, resulting in reduced confidentiality and/or integrity of Production Servers, Production Databases and Operations",
+      "threatSource": "internal actor",
+      "prerequisites": "with physical access to data",
+      "threatAction": "remove production servers",
+      "threatImpact": "the theft of sensitive payment and patient data",
+      "impactedAssets": [
+        "Production Servers",
+        "Production Databases",
+        "Operations"
+      ],
+      "impactedGoal": [
+        "confidentiality",
+        "integrity"
+      ],
+      "metadata": [
+        {
+          "key": "Priority",
+          "value": "High"
+        },
+        {
+          "key": "STRIDE",
+          "value": [
+            "T",
+            "I"
+          ]
+        }
+      ]
+    }
+  ]
+}
