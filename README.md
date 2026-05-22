@@ -31,7 +31,7 @@ The work was completed across three parts over the semester.
 
 **Part 2** expanded the threat model using AWS Threat Composer with full STRIDE classification, data flow diagrams, and mitigation mapping across 10 identified threats.
 
-**Part 3** finalized the security control catalog, control interaction diagram, and gap analysis mapping controls to preventive, detective, and corrective phases.
+**Part 3** finalized the security control catalog, control interaction diagram, gap analysis, and MITRE ATT&CK mapping for a LockBit ransomware scenario against Health Network.
 
 ## Tools & Frameworks
 
