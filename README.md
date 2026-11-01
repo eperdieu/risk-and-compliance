@@ -1,40 +1,62 @@
+<div align="center">
+
 # Risk Assessment and Compliance
 
-This repo holds work I completed during CIT 45100: Risk Assessment and Compliance at Purdue University Indianapolis. The course focused on government and industry frameworks, threat modeling, security control design, and real world risk analysis applied to a fictional healthcare organization called Health Network.
+**Threat modeling and security controls for a fictional healthcare organization**
 
-## Project Overview
+CIT 45100 · Purdue University Indianapolis
 
-The semester project was a full risk assessment of Health Network, done in three parts. I built the threat model, asset inventory, data flow diagrams, and security control catalog for a healthcare network that handles patient data, payment processing, and medical messaging.
+![AWS Threat Composer](https://img.shields.io/badge/AWS_Threat_Composer-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Microsoft TMT](https://img.shields.io/badge/Microsoft_Threat_Modeling_Tool-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+![Lucidchart](https://img.shields.io/badge/Lucidchart-F97A1F?style=for-the-badge)
+![NIST](https://img.shields.io/badge/NIST-0033A0?style=for-the-badge)
+![STRIDE](https://img.shields.io/badge/STRIDE-4B5563?style=for-the-badge)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE_ATT%26CK-B91C1C?style=for-the-badge)
 
-## Project Structure
+</div>
 
-**Part 1** covered the initial asset inventory, process map, and threat identification. I compared Microsoft Threat Modeling Tool and AWS Threat Composer side by side, evaluating each tool's advantages and limitations for modeling Health Network's architecture.
+---
 
-**Part 2** expanded the threat model using AWS Threat Composer with full STRIDE classification, data flow diagrams built in Lucidchart, and mitigation mapping across 10 identified threats covering SQL injection, DDoS, ransomware, physical theft, and insider threats.
+## At a glance
 
-**Part 3** finalized the security control catalog with six controls across preventive, detective, and corrective phases, a control interaction diagram, a gap analysis identifying residual risks, and a MITRE ATT&CK mapping for a LockBit ransomware scenario against Health Network.
+| 3 parts | 10 threats modeled | 6 security controls | 12 deliverables |
+|:---:|:---:|:---:|:---:|
+| Inventory, threat model, controls | STRIDE classified | Preventive, detective, corrective | Diagrams, catalogs, case studies |
 
-## What's Covered
+## Overview
+
+A full risk assessment of **Health Network**, a fictional healthcare organization that handles patient data, payment processing, and medical messaging. The course focused on government and industry frameworks, threat modeling, security control design, and real world risk analysis.
+
+## The three parts
+
+**Part 1: Assets and threats.** Built the asset inventory, process map, and first threat list. Compared Microsoft Threat Modeling Tool and AWS Threat Composer side by side, covering the advantages and limits of each for modeling Health Network.
+
+**Part 2: Threat model.** Expanded the model in AWS Threat Composer with full STRIDE classification, built data flow diagrams in Lucidchart, and mapped mitigations for 10 threats: SQL injection, DDoS, ransomware, physical theft, and insider threats.
+
+**Part 3: Security controls.** Finished a control catalog with six controls across preventive, detective, and corrective phases, a control interaction diagram, a gap analysis of residual risk, and a MITRE ATT&CK mapping of a LockBit ransomware scenario against Health Network.
+
+<details>
+<summary><b>All deliverables</b></summary>
+
+<br>
 
 | Deliverable | Description |
 |-------------|-------------|
 | Asset Inventory | Classified assets across Health Network's production environment |
 | Asset Classification Diagram | Data flow and trust boundary diagram built in Microsoft Threat Modeling Tool |
-| Data Flow Diagrams | Interaction diagrams showing data movement across HNetPay, HNetExchange, and HNetConnect |
-| Threat Model | 10 STRIDE classified threats modeled in AWS Threat Composer with mitigations mapped |
-| Process Map | HNetConnect patient search flow with SQL injection and information disclosure risks identified |
+| Data Flow Diagrams | Data movement across HNetPay, HNetExchange, and HNetConnect |
+| Threat Model | 10 STRIDE classified threats in AWS Threat Composer with mitigations mapped |
+| Process Map | HNetConnect patient search flow, with SQL injection and information disclosure risks |
 | Security Control Catalog | Preventive, detective, and corrective controls with implementation steps, risk mitigation, and testing criteria |
-| Control Interaction Diagram | Visual showing how controls layer across attack phases |
+| Control Interaction Diagram | How controls layer across attack phases |
 | MITRE ATT&CK Mapping | LockBit ransomware techniques mapped to Health Network using ATT&CK Navigator |
-| MITRE ATT&CK Technique Breakdown | Detailed analysis of each technique including targeted assets, detections, and controls |
+| MITRE ATT&CK Technique Breakdown | Each technique with targeted assets, detections, and controls |
 | Framework Comparison | NIST, ISO, and supply chain security model analysis |
 | Case Study Analysis | Breach post mortem and compliance critique (Everbridge) |
 | Awareness Campaign Evaluation | Critique of real cybersecurity awareness material |
 
-## Tools and Frameworks
+</details>
 
-<img src="assets/risk_tools.svg" alt="Tools and frameworks: AWS Threat Composer, Microsoft Threat Modeling Tool, OWASP Threat Dragon, Lucidchart, NIST CSF, STRIDE, MITRE ATT&CK" width="100%">
+---
 
-## Notes
-
-All work was performed on a fictional healthcare organization for educational purposes. No real patient or payment data was involved.
+<sub>All work was performed on a fictional healthcare organization for educational purposes. No real patient or payment data was involved.</sub>
